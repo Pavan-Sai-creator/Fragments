@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FirstFragment">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:fillViewport="true">
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:id="@+id/first_frag_txtView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:padding="16dp"
+               android:text="First Fragment"
+               android:textSize="34sp"
+               android:textStyle="bold"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.5"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <TextView
+               android:id="@+id/enterDataTextView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:padding="5dp"
+               android:text="Enter data and press next to pass it to 2nd fragment"
+               android:textSize="15sp"
+
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.5"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/first_frag_txtView" />
+
+           <EditText
+               android:id="@+id/first_frag_editText"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:hint="Start Typing..."
+               android:inputType="number|textCapSentences"
+
+               android:textAlignment="center"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.5"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/enterDataTextView" />
+
+           <Button
+               android:id="@+id/first_frag_nxtButton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="next"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.498"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/first_frag_txtView"
+               app:layout_constraintVertical_bias="0.801" />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+   </ScrollView>
+</layout>
